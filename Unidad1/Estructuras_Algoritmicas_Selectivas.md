@@ -4,7 +4,7 @@ Las estructuras lógicas selectivas se encuentran en la solución algorítmica d
 
 Esta toma de decisión (expresada en el diagrama de flujo con un rombo) se basa en la evaluación de una o más condiciones que nos señalarán como alternativa o consecuencia, la rama a seguir.
 
-Hay situaciones en las que la toma de decisiones se realiza en cascada. Es decir se toma una decisión, se marca la rama correspondiente a seguir, se vuelve a tomar otra decisión y así sucesivamente. Por lo que para alcanzar la solución de un problema o subproblema debemos aplicar prácticamente un árbol de deci-sión. dame un ejemplo para DFD, python y c
+Hay situaciones en las que la toma de decisiones se realiza en cascada. Es decir se toma una decisión, se marca la rama correspondiente a seguir, se vuelve a tomar otra decisión y así sucesivamente. Por lo que para alcanzar la solución de un problema o subproblema debemos aplicar prácticamente un árbol de decisión.
 
 Las **estructuras selectivas** son formas de controlar el flujo de ejecución de un algoritmo al tomar decisiones, permitiendo elegir entre diferentes caminos según una o varias condiciones. Se representan en diagramas de flujo mediante un rombo y existen de tipo "si", "si entonces sino" (doble) y "si múltiple" (varias alternativas).
 
