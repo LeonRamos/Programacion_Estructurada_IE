@@ -1,0 +1,71 @@
+import random
+
+alumnos = [
+    "CESAR ISAAC AGUIRRE MORENO",
+    "CESAR EUCARIO CABRERA GUTIERREZ",
+    "HERIBERTO CORONA LOPEZ",
+    "ANGEL URIEL GALAN MENDEZ",
+    "SAUL EDUARDO GOMEZ RODRIGUEZ",
+    "OSCAR DANIEL LEGASPI MARTINEZ",
+    "JOSE MANUEL MARES SONORA",
+    "BRYAN MORENO PRADO"
+]
+
+problemas = [
+    {
+        "titulo": "Control financiero familiar",
+        "descripcion": """
+En una familia de cuatro integrantes, cada uno aporta un monto mensual a los gastos comunes del hogar. El programa debe solicitar el nombre y el monto aportado de cada miembro. Luego, debe calcular el total recaudado y comparar este valor contra el presupuesto mensual fijado previamente por la familia. Si el total es suficiente, mostrará un mensaje de felicitación; si no lo es, deberá mostrar quién aportó menos del promedio y sugerir un plan de ajuste. Los montos deberán ser validados para que no sean negativos, y el presupuesto debe ser declarado como variable. Analiza cómo las decisiones familiares dependen de los datos correctos y la información financiera precisa, identificando el papel de la programación estructurada para decidir, informar y proponer acciones en escenarios cotidianos de administración financiera.
+        """
+    },
+    {
+        "titulo": "Clasificación de temperatura corporal",
+        "descripcion": """
+La enfermera de un centro médico escolar registra la temperatura de los pacientes y debe clasificarlos según el rango: hipotermia, temperatura normal, fiebre moderada y fiebre alta. El sistema recibe nombres y temperaturas, y decide a qué tipo de atención derivar cada estudiante. Si la fiebre es superior a 39°C, se alerta al director. El programa deberá mostrar la estadística diaria de casos y el tipo de datos de cada registro, validando valores fuera del rango humano (35°C-42°C). Explica cómo la salud escolar requiere algoritmos selectivos para proteger la integridad de la comunidad y cómo las decisiones automatizadas apoyan la vigilancia médica en tiempo real.
+        """
+    },
+    {
+        "titulo": "Automatización de descuentos en supermercados",
+        "descripcion": """
+Un supermercado aplica descuentos según la cantidad comprada y la membresía de cliente. El programa debe solicitar el tipo de producto, cantidad adquirida, y si posee tarjeta de fidelidad. Las reglas de descuento varían seleccionando la cantidad y si el cliente es o no socio; por ejemplo, menos de 5 productos no tienen descuento, de 5 a 10 se descuenta el 5%, más de 10 el 10%, y los socios reciben un descuento adicional. Muestra el monto final a pagar y el ahorro obtenido. Justifica cómo la selección algorítmica sostiene la eficiencia comercial y la fidelización de clientes, vinculando manejo de datos y decisiones lógicas para beneficiar la economía personal.
+        """
+    },
+    {
+        "titulo": "Sistema de evaluación escolar por promedio",
+        "descripcion": """
+En una escuela secundaria, los maestros introducen las calificaciones de cinco materias por estudiante, después el programa calcula el promedio general y decide si el estudiante pasa de grado (mayor a 7), requiere recuperación (mayor a 6 y menor o igual a 7), o repite curso. El sistema también debe identificar automáticamente al estudiante con la calificación más alta y a quien requiere atención académica especial. Profundiza en el impacto que las sentencias selectivas y la lógica condicional tienen sobre la equidad y objetividad en los procesos educativos, destacando la importancia del manejo correcto de datos y operadores aritméticos en contextos reales.
+        """
+    },
+    {
+        "titulo": "Control de acceso a un edificio de oficinas",
+        "descripcion": """
+El sistema recibe el nombre, código de acceso y hora de ingreso de cada empleado. Dependiendo de la hora y el código, determina si puede acceder (si el código es correcto y la hora está en el rango autorizado, por ejemplo, 07:00 a 18:00) y si debe alertar seguridad en caso de intentos fallidos o fuera de horario. El sistema debe registrar cada acceso y presentar un reporte de los eventos del día. Explica cómo la seguridad institucional depende de la correcta implementación de variables, operadores lógicos y estructuras selectivas para proteger la confidencialidad y el control del flujo de personas.
+        """
+    },
+    {
+        "titulo": "Seguros automotrices: cálculo de primas",
+        "descripcion": """
+Una aseguradora solicita al usuario introducir edad, tipo de vehículo, y años sin accidentes para determinar si puede ofrecerle una prima especial. Si el usuario tiene menos de 21 años y vehículo deportivo, la prima se incrementa; si es mayor y lleva varios años sin accidentes, recibe descuento. El sistema debe utilizar operadores aritméticos y lógicos para decidir el costo final, validar los datos ingresados y mostrar la respuesta con justificación. Analiza cómo la automatización de seguros depende de criterios selectivos claros y del manejo adecuado de la información para proponer coberturas de manera justa y personalizada.
+        """
+    },
+    {
+        "titulo": "Agenda personal inteligente",
+        "descripcion": """
+El programa permite gestionar una agenda de contactos, pidiendo nombre, teléfono y fecha de cumpleaños. Si la fecha actual coincide con algún cumpleaños, el programa sugiere enviar una felicitación automáticamente. Si el teléfono no cumple formato nacional (10 dígitos), solicita corrección. Argumenta cómo las soluciones programadas facilitan la gestión personal y favorecen las relaciones sociales, usando operadores lógicos y aritméticos para garantizar la precisión en la información de contactos y la relevancia de las acciones.
+        """
+    },
+    {
+        "titulo": "Calculadora de gastos de viaje compartido",
+        "descripcion": """
+Un grupo de amigos planea un viaje y necesita dividir los gastos de gasolina, comida y hospedaje entre los participantes. El programa solicita datos como cantidad de personas y monto de cada gasto, calcula el total y muestra cuánto debe pagar cada uno, aplicando condiciones especiales: si alguno consume más comida o se hospeda en habitación privada, su monto será mayor. Explica la relevancia de organizar datos en variables, usar operadores aritméticos y manejar decisiones con sentencias selectivas que permitan una distribución justa, eficiente y transparente de los gastos en actividades sociales cotidianas.
+        """
+    }
+]
+
+# Sortear problemas
+random.shuffle(problemas)
+asignaciones = list(zip(alumnos, problemas * ((len(alumnos)//len(problemas)) + 1)))
+
+print("Asignación aleatoria de problemas por estudiante:\n")
+for alumno, problema in asignaciones[:len(alumnos)]:
+    print(f"Alumno: {alumno}\nProblema: {problema['titulo']}\nDescripción: {problema['descripcion'].strip()}\n---\n")
