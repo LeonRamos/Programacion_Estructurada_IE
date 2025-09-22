@@ -27,7 +27,7 @@ Este repositorio contiene ocho problemas contextualizados en la vida diaria que 
 
 > Se sortearan en la clase los problemas.
 Aquí la descripcion de tu problema.
-
+![SPIDEY](./api-v1.1-file-public-files-pim-assets-97-ad-84-62-6284ad972eff292d45ce1a2e-images-ff-f8-ee-65-65eef8ffc603602a4b691006-iadx8-117-spidey-sightseeing-tour-with-friends-web.jpg)
 ***
 
 ## 📋 Descripción del Problema
