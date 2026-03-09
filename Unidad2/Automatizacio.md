@@ -1,6 +1,8 @@
-Fase 2: Implementación Manual
-En C (Enfoque Estructurado)
-C
+# Implementación Manual
+
+#### En C (Enfoque Estructurado)
+
+```c
 #include <stdio.h>
 
 int main() {
@@ -28,8 +30,12 @@ int main() {
     }
     return 0;
 }
-En Python (Enfoque Secuencial Simple)
-Python
+
+```
+
+#### En Python (Enfoque Secuencial Simple)
+
+```python
 print("--- Sistema de Estacionamiento ---")
 edad = int(input("Ingrese su edad: "))
 
@@ -44,3 +50,5 @@ else:
         print("¡Se aplicó un descuento del 10%!")
         
     print(f"El total a pagar es: ${total:.2f}")
+
+```
